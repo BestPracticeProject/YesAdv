@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Welcome / Project</title>
+  <title>Welcome / YES!</title>
 
   <!-- Meta tags -->
   <meta name="description" content="">
@@ -38,7 +38,7 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="resources/common/css/common.css" />
-
+  <link href="resources/slider/jquery.bxslider.css" rel="stylesheet" />
   <!-- Application-specific meta tags -->
   <!-- Open Graph protocol -->
   <meta property="og:type" content="website"/>
@@ -47,11 +47,42 @@
   <meta property="og:image" content="" />
 </head>
 <body>
-  <div class="wrapper">
+  <div class="wrapper j-wrapper">
 
+    <div class="section section-header">
+      <div class="section__inner">
+        <header class="header">
+          <div class="header_inner">
+            <img class="logo" src="resources/common/img/logo.png" />
+
+            <nav class="nav cf j-nav">
+              <div class="nav_inner">
+                <button class="nav_btn j-nav_btn">меню</button>
+
+                <ul class="nav_list j-nav_list">
+                  <li class="nav_item-active nav_item"><a href="" class="nav_link">yes!</a></li>
+                  <li class="nav_item"><a href="" class="nav_link">портфолио</a></li>
+                  <li class="nav_item"><a href="" class="nav_link">сервис</a></li>
+                  <li class="nav_item"><a href="" class="nav_link">о нас</a></li>
+                  <li class="nav_item"><a href="" class="nav_link">контакты</a></li>
+                </ul>
+              </div>  
+            </nav>
+          </div>
+        </header>
+      </div>
+
+      <div class="bx-slider">
+        <ul class="bxslider">
+          <li><img src="resources/common/img/header/header_slider_1.png" alt=""></li>
+        </ul>
+      </div>
+    </div>
+  
   </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>window.jQuery || document.write("<script src='resources/common/js/libs/jquery-1.11.1.min.js'>\x3C/script>")</script>
+<script src="resources/slider/jquery.bxslider.min.js"></script>
 <script src="resources/common/js/common.js"></script>
 </body>
 </html>
