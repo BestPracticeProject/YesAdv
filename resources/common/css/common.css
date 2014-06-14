@@ -65,10 +65,6 @@
          url('../fonts/Lato-Heavy/lato-heavy.svg#LatoHeavy') format('svg');
 }
 
-
-
-
-
 /*-----------------------------------------------------------------------------
  * Best Practice :: common.css
  * ----------------------------------------------------------------------------
@@ -395,6 +391,10 @@ button { cursor: pointer; }
   .m-section-fill_brief {
     padding: 60px 0;
     background: #2f3238;
+    text-align: center;
+  }
+  .m-section-contacts {
+    padding: 75px 0 95px 0;
   }
 
 .section__content {
@@ -767,6 +767,52 @@ button { cursor: pointer; }
   }
 }
 
+/* Fill brief */
+.fill_brief__link {
+  font: 1.33em 'LatoBlack';
+}
+
+/* Contacts */
+.cp_info {
+  padding: 40px 0 0 0;
+}
+
+.cp_info__title {
+  margin: 0 0 20px 0;
+  font: 1.33em 'LatoBold';
+  text-align: center;
+  text-transform: uppercase;
+  color: #26292e;
+}
+
+.cp_info__list {
+  text-align: center;
+}
+
+.cp_info__item {
+  margin: 0 0 10px 0;
+}
+.cp_info__link {
+  font: .88em'LatoRegular';
+  color: #26292e;
+  text-decoration: none;
+}
+
+.cp_form {
+  padding: 0 5%;
+}
+
+.cp_form__inp {
+  display: block;
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding: 20px;
+  background: #ebebeb;
+  font: normal .88em 'LatoRegular';
+}
+  .cp_form__inp:last-child {
+    margin: 0;
+  }
 
 
 
