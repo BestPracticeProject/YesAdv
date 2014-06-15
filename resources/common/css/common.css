@@ -396,6 +396,14 @@ button { cursor: pointer; }
   .m-section-contacts {
     padding: 75px 0 95px 0;
   }
+  .m-section-social {
+    padding: 75px 0 110px 0;
+    background: #2f3238;
+  }
+  .m-section-copyrights {
+    padding: 25px 0;
+    background: #26292e;
+  }
 
 .section__content {
 }
@@ -773,7 +781,7 @@ button { cursor: pointer; }
 }
 
 /* Contacts */
-.cp_info {
+.contacts_preview__inner {
   padding: 40px 0 0 0;
 }
 
@@ -808,11 +816,71 @@ button { cursor: pointer; }
   margin: 0 0 10px 0;
   padding: 20px;
   background: #ebebeb;
+  border: 1px solid #26292e;
   font: normal .88em 'LatoRegular';
 }
-  .cp_form__inp:last-child {
-    margin: 0;
+
+.cp_form__btn {
+  text-transform: none;
+  color: #26292e;
+}
+
+@media screen and (min-width: 980px) {
+  .cp_info {
+    float: right;
+    width: 200px;
+    padding: 0;
   }
+
+  .cp_info__title,
+  .cp_info__list {
+    text-align: left;
+  }
+
+  .cp_form {
+    margin-right: 200px;
+    padding: 0 5% 0 0;
+  }
+}
+
+/* Social */
+.social__list {
+  text-align: center;
+}
+
+.social__item {
+  display: inline-block;
+  margin: 0;
+}
+
+.social__link {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-color: #26292e;
+  -webkit-transition: background-color .3s ease;
+  -o-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+  .social__link:hover {
+    background-color: #ecbd00;
+  }
+
+.social__icon {
+  opacity: .3;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+  .social__link:hover .social__icon {
+    opacity: 1;
+  }
+
+@media screen and (min-width: 980px) {
+  .social__item {
+    margin: 0 25px 0 0;
+  }
+}
 
 
 
