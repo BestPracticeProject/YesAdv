@@ -380,6 +380,10 @@ button { cursor: pointer; }
   font-size: 18px;
   overflow: hidden;
 }
+  .m-section-works {
+    padding: 80px 0 50px 0;
+    background: #fff;
+  }
   .m-section-wdo {
     padding: 100px 0 90px 0;
     background: #ecbd00;
@@ -405,19 +409,6 @@ button { cursor: pointer; }
     background: #26292e;
   }
 
-
-.section__content {
-}
-
-  .section-header {
-    background: #26282b;
-  }
-
-  .m-section-works {
-    padding: 160px 0 100px 0;
-    background: #fff;
-  }
-
 .section__inner {
   position: relative;
   width: 100%;
@@ -438,22 +429,26 @@ button { cursor: pointer; }
   font: normal 1.3em/1 'LatoRegular';
   text-align: center;
   color: #2f3238;
-
 }
 
 
 @media screen and (min-width: 980px) {
+  .m-section-works {
+    padding: 160px 0 100px 0;
+  }
+
   .m-section-wdo .section__content {
       margin: 100px 0 0 0;
   }
 }
 
+.section-header {
+  background: #26282b;
+}
 
 /*-----------------------------------------------------------------------------
  * HEADDER
  *------------------------------------------------------------------------------*/
-
-
 .header {
   position: absolute;
   width: 100%;
@@ -610,6 +605,9 @@ button { cursor: pointer; }
     background: #ecbd00;
   }
 
+.works__examples_inner {
+  margin: 0 auto;
+}
 
 .works__item_inner {
   position: relative;
@@ -625,6 +623,14 @@ button { cursor: pointer; }
   height: 100%;
 }
 
+.witem-hidden {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  -webkit-animation: bounceOut .3s;
+  animation: bounceOut .3s;
+}
+
 .witem__wrap {
   position: absolute;
   top: 100%;
@@ -634,7 +640,8 @@ button { cursor: pointer; }
   width: 100%;
   height: 100%;
   background: #ecbd00;
-  transition: top .2s  ease;
+  -webkit-transition: top .2s ease .2s;
+  transition: top .2s ease .2s;
 }
   .works__item_inner:hover .witem__wrap {
     top: 0;
@@ -657,12 +664,11 @@ button { cursor: pointer; }
   position: absolute;
   left: 15px;
   bottom: 25px;
-
 }
 
 .works__item_inner:hover .witem__info {
-  -webkit-animation: bounceInLeft .6s .2s;
-  animation: bounceInLeft .6s .2s;
+  -webkit-animation: bounceInLeft .3s .3s;
+  animation: bounceInLeft .3s .3s;
 }
 
 .witem__txt {
@@ -670,11 +676,18 @@ button { cursor: pointer; }
   font: .78em 'LatoRegular';
   text-transform: lowercase;
 }
+@media screen and (min-width: 980px) {
+  .works__examples_inner {
+    width: 870px;
+  }
 
-@media screen and (min-width: 1000px) {
+  .works__item:nth-child(3n+4) {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 1100px) {
   .works__types {
     float: left;
-    width: 13%;
   }
 
   .wtypes__list {
@@ -692,15 +705,15 @@ button { cursor: pointer; }
   }
 
   .works__examples {
+    width: 870px;
     float: right;
-    width: 87%;
+    margin: 0 0 0 100px;
   }
 
   .works__item:nth-child(3n+4) {
     padding-left: 0;
   }
 }
-
 
 /* What we do - service */
 .wdo__point {
@@ -899,20 +912,14 @@ button { cursor: pointer; }
 @-webkit-keyframes bounceInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-500px);
+    transform: translateX(-500px);
   }
 
   60% {
     opacity: .6;
     -webkit-transform: translateX(30px);
     transform: translateX(30px);
-  }
-
-  80% {
-    opacity: .9;
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
   }
 
   100% {
@@ -925,9 +932,9 @@ button { cursor: pointer; }
 @keyframes bounceInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-1000px);
-    -ms-transform: translateX(-1000px);
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-500px);
+    -ms-transform: translateX(-500px);
+    transform: translateX(-500px);
   }
 
   60% {
@@ -935,13 +942,6 @@ button { cursor: pointer; }
     -webkit-transform: translateX(30px);
     -ms-transform: translateX(30px);
     transform: translateX(30px);
-  }
-
-  80% {
-    opacity: .9;
-    webkit-transform: translateX(-10px);
-    -ms-transform: translateX(-10px);
-    transform: translateX(-10px);
   }
 
   100% {
@@ -955,6 +955,65 @@ button { cursor: pointer; }
 .bounceInLeft {
   -webkit-animation-name: bounceInLeft;
   animation-name: bounceInLeft;
+}
+
+@-webkit-keyframes bounceOut {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  25% {
+    -webkit-transform: scale(.95);
+    transform: scale(.95);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(.3);
+    transform: scale(.3);
+    display: none;
+  }
+}
+
+@keyframes bounceOut {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  25% {
+    -webkit-transform: scale(.95);
+    -ms-transform: scale(.95);
+    transform: scale(.95);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(.3);
+    -ms-transform: scale(.3);
+    transform: scale(.3);
+    display: none;
+  }
+}
+
+.bounceOut {
+  -webkit-animation-name: bounceOut;
+  animation-name: bounceOut;
 }
 
 
