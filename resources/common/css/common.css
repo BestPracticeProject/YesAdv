@@ -405,6 +405,7 @@ button { cursor: pointer; }
     background: #26292e;
   }
 
+
 .section__content {
 }
 
@@ -882,6 +883,16 @@ button { cursor: pointer; }
   }
 }
 
+/* Copyright */
+.copyrights__txt {
+  font: 0.66em 'LatoRegular';
+  text-align: center;
+  color: #fefefe;
+}
+.copyrights__ext {
+  color: #de5e60;
+  text-transform: uppercase;
+}
 
 
 /* Animate */
