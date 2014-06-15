@@ -309,7 +309,7 @@
       <div class="section__inner">
         <h3 class="section__title">Контакты</h3>
         <p class="section__desc">Думаете мы можем помочь? Мы хотим, ждем ваших сообщений.</p>
-        <div class="contacts_preview__inner">
+        <div class="contacts_preview__inner cf">
           <div class="cp_info">
             <h5 class="cp_info__title">Информация</h5>
             <ul class="cp_info__list">
@@ -327,13 +327,50 @@
 
           <div class="cp_form">
             <form action="" type="POST">
-              <input type="text" name="name" class="cp_form__inp" placeholder="Имя" required>
-              <input type="email" name="email" class="cp_form__inp" title="Напишите Вашу электронную почту" placeholder="Электронная почта">
-              <textarea name="sms" id="sms" cols="30" rows="10" class="cp_form__inp"></textarea>
+              <input type="text" name="name" class="cp_form__inp" placeholder="Имя" required title="Напишите Ваше имя">
+              <input type="email" name="email" class="cp_form__inp" title="Напишите Вашу электронную почту" placeholder="Электронная почта" required>
+              <textarea name="sms" id="sms" cols="30" rows="10" class="cp_form__inp" placeholder="Ваше сообщение" required></textarea>
+              <button type="submit" class="cp_form__btn btn">Отправить</button>
             </form>
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="section m-section-social social">
+      <div class="section__inner">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="https://twitter.com/" class="social__link m-social__link-twitter" title="Twitter" target="_blank">
+              <img src="resources/common/img/social/twitter.png" alt="twitter icon" class="social__icon">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://uk-ua.facebook.com/" class="social__link m-social__link-fb" title="Facebook" target="_blank">
+               <img src="resources/common/img/social/fb.png" alt="twitter icon" class="social__icon">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://vimeo.com/" class="social__link m-social__link-vimeo" title="Vimeo" target="_blank">
+               <img src="resources/common/img/social/vimeo.png" alt="twitter icon" class="social__icon">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="http://www.behance.net/" class="social__link m-social__link-behance" title="Behance" target="_blank">
+               <img src="resources/common/img/social/behance.png" alt="twitter icon" class="social__icon">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://dribbble.com/" class="social__link m-social__link-dribbble" title="Dribbble" target="_blank">
+               <img src="resources/common/img/social/dribbble.png" alt="twitter icon" class="social__icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section m-section-copyrights">
+
     </section>
 
   </div>
