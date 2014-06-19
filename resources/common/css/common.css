@@ -63,15 +63,19 @@
          url('../fonts/Lato-Heavy/lato-heavy.woff') format('woff'),
          url('../fonts/Lato-Heavy/lato-heavy.ttf') format('truetype'),
          url('../fonts/Lato-Heavy/lato-heavy.svg#LatoHeavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'LatoSemibold';
     src: url('../fonts/Lato-Semibold/lato-semibold.eot');
     src: url('../fonts/Lato-Semibold/lato-semibold.eot') format('embedded-opentype'),
-    url('../fonts/Lato-Semibold/lato-semibold.woff') format('woff'),
-    url('../fonts/Lato-Semibold/lato-semibold.ttf') format('truetype'),
-    url('../fonts/Lato-Semibold/lato-semibold.svg#LatoSemibold') format('svg');
+        url('../fonts/Lato-Semibold/lato-semibold.woff') format('woff'),
+        url('../fonts/Lato-Semibold/lato-semibold.ttf') format('truetype'),
+        url('../fonts/Lato-Semibold/lato-semibold.svg#LatoSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -84,15 +88,17 @@
          url('../fonts/BloknotC/.svg#BloknotCRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-    }
+}
 
 @font-face {
     font-family: 'MyriadProRegular';
     src: url('../fonts/MyriadPro-Regular/myriadpro-regular.eot');
     src: url('../fonts/MyriadPro-Regular/myriadpro-regular.eot') format('embedded-opentype'),
-    url('../fonts/MyriadPro-Regular/myriadpro-regular.woff') format('woff'),
-    url('../fonts/MyriadPro-Regular/myriadpro-regular.ttf') format('truetype'),
-    url('../fonts/MyriadPro-Regular/myriadpro-regular.svg#MyriadProRegular') format('svg');
+        url('../fonts/MyriadPro-Regular/myriadpro-regular.woff') format('woff'),
+        url('../fonts/MyriadPro-Regular/myriadpro-regular.ttf') format('truetype'),
+        url('../fonts/MyriadPro-Regular/myriadpro-regular.svg#MyriadProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -1050,34 +1056,33 @@ button { cursor: pointer; }
 /*-----------------------------------------------------------------------------
  * FOLIO PAGE
  *------------------------------------------------------------------------------*/
-  .folio_div_back_link {
-    max-width: 1140px;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-   }
+.folio_div_back_link {
+max-width: 1140px;
+position: fixed;
+top: 60px;
+left: 0;
+right: 0;
+margin: 0 auto;
+}
 
-    .folio_back_link {
-      display: block;
-      width: 70px;
-      height: 70px;
-      float: right;
-      background: #ecbd00;
-      z-index: 15;
-      text-decoration: none;
-      font: 2.25em 'BloknotC';
-      color: #000;
-      line-height: 70px;
-      text-align: center;
-    }
+  .folio_back_link {
+    display: block;
+    width: 70px;
+    height: 70px;
+    float: right;
+    background: #ecbd00;
+    z-index: 15;
+    text-decoration: none;
+    font: 2.25em 'BloknotC';
+    color: #000;
+    line-height: 70px;
+    text-align: center;
+  }
 
-
- .folio__wrap {
-  max-width: 900px;
-  margin: 0 auto;
- }
+.folio__wrap {
+max-width: 900px;
+margin: 0 auto;
+}
 
   .folio_hgroup {
     margin-top: 160px;
@@ -1088,7 +1093,7 @@ button { cursor: pointer; }
       margin: 0;
       text-transform: uppercase;
       font: 1.3em/1.5em 'BloknotCBold';
-      
+
     }
 
     .folio_description {
@@ -1158,9 +1163,6 @@ button { cursor: pointer; }
       margin-left: 16px;
     }
 
-/*-----------------------------------------------------------------------------
- *END FOLIO PAGE
- *------------------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------------
  *404 PAGE
@@ -1174,75 +1176,59 @@ button { cursor: pointer; }
       left: 0;
       right: 0;
   }
+
     .error_table {
         display:table;
         width: 100%;
         height: 100%;
     }
-        .content_error {
-            display: table-cell;
-            vertical-align: middle;
-        }
+
+      .content_error {
+        display: table-cell;
+        vertical-align: middle;
+      }
 
         .error_message {
-            margin: 0 auto;
-            max-width: 720px;
-
+          margin: 0 auto;
+          max-width: 720px;
         }
 
-            .text_error{
-                font: 28px 'LatoRegular';
-                color: #26292e;
-            }
+          .text_error{
+             font: 28px 'LatoRegular';
+             color: #26292e;
+          }
 
            .error_text_link {
-               font: 28px 'LatoSemibold';
-               color: #26292e;
+             font: 28px 'LatoSemibold';
+             color: #26292e;
            }
 
-
         .text_error_404{
-            margin: ;0 auto;
-            font: 404px/464px 'LatoBold';
-            color: #26292e;
-            text-align: center;
+          margin: ;0 auto;
+          font: 404px/464px 'LatoBold';
+          color: #26292e;
+          text-align: center;
         }
 
-
     .footer_error {
-        position: relative;
-        bottom: 60px;
-        background: #26292e;
-        height: 60px;
-        border-top: 3px solid #2f3238;
+      position: relative;
+      bottom: 60px;
+      background: #26292e;
+      height: 60px;
+      border-top: 3px solid #2f3238;
 
     }
         
         .footer_text {
-            font: 12px/60px 'MyriadProRegular';
-            text-align: center;
-            color: #fff;
-            text-transform: uppercase;
+          font: 12px/60px 'MyriadProRegular';
+          text-align: center;
+          color: #fff;
+          text-transform: uppercase;
         }
 
-            .footer_text_yellow {
-                color: #ecbd00;
+          .footer_text_yellow {
+            color: #ecbd00;
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*-----------------------------------------------------------------------------
  *END 404 PAGE
