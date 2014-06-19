@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'LatoSemibold';
+    src: url('lato-semibold.eot');
+    src: url('lato-semibold.eot') format('embedded-opentype'),
+         url('lato-semibold.woff') format('woff'),
+         url('lato-semibold.ttf') format('truetype'),
+         url('lato-semibold.svg#LatoSemibold') format('svg');
+}
