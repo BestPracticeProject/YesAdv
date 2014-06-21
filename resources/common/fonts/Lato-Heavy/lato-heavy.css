@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'LatoHeavy';
-    src: url('lato-heavy.eot');
-    src: url('lato-heavy.eot') format('embedded-opentype'),
-         url('lato-heavy.woff') format('woff'),
-         url('lato-heavy.ttf') format('truetype'),
-         url('lato-heavy.svg#LatoHeavy') format('svg');
-}

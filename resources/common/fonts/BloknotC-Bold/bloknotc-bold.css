@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'BloknotCBold';
-    src: url('bloknotc-bold.eot');
-    src: url('bloknotc-bold.eot') format('embedded-opentype'),
-         url('bloknotc-bold.woff') format('woff'),
-         url('bloknotc-bold.ttf') format('truetype'),
-         url('bloknotc-bold.svg#BloknotCBold') format('svg');
-}
