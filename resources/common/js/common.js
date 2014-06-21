@@ -25,7 +25,7 @@
 
 		/* slider */
 		if (!!$.fn.bxSlider){
-			$('.bxslider').bxSlider({
+			$('.j-bxslider').bxSlider({
 				pager: false
 			});
 		}

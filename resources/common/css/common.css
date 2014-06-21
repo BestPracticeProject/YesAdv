@@ -566,12 +566,17 @@ button { cursor: pointer; }
   }
 }
 
-.slider_wrap {
+/* slide */
+
+.slide {
   position: relative;
   width: 100%;
-  background: url('../img/header/header_slider_1.png') no-repeat 50%;
-  background-size: contain;
+  padding: 360px 10px 125px 10px
 }
+  .m-slide-visualizer {
+    background: url('../img/header/header_slider_1.png') no-repeat 50%;
+    background-size: contain;
+  }
 
 .h_slide {
   display: table;
