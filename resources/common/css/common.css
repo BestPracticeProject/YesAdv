@@ -1018,3 +1018,6 @@ button { cursor: pointer; }
 
 
 
+#Container .mix{
+    display: none;
+}
