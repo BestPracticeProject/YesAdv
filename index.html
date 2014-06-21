@@ -39,12 +39,6 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="resources/common/css/common.css" />
   <link href="resources/slider/jquery.bxslider.css" rel="stylesheet" />
-  <!-- Application-specific meta tags -->
-  <!-- Open Graph protocol -->
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="" />
-  <meta property="og:description" content="" />
-  <meta property="og:image" content="" />
 </head>
 <body>
   <div class="wrapper j-wrapper">
@@ -99,33 +93,57 @@
       </div>
     </div>
 
-    <div class="section m-section-works works">
+    <div class="section m-section-works works" id="works">
       <div class="section__inner">
         <h3 class="section__title">Наши работы</h3>
         <p class="section__desc">Наша гордость, собрали, разложили, хвастаемся.</p>
         <div class="works__wrap cf">
 
           <div class="works__btn_wrap">
-            <button class="filter" data-filter="all">Все</button>
-            <button class="filter" data-filter=".f-sites">Сайты</button>
-            <button class="filter" data-filter=".f-brands">Брандинг</button>
-            <button class="filter" data-filter=".f-identity">Айдентика</button>
-            <button class="filter" data-filter=".f-advs">Реклама</button>
+            <button class="filter works__btn" data-filter="all">Все</button>
+            <button class="filter works__btn" data-filter=".f-sites">Сайты</button>
+            <button class="filter works__btn" data-filter=".f-brands">Брандинг</button>
+            <button class="filter works__btn" data-filter=".f-identity">Айдентика</button>
+            <button class="filter works__btn" data-filter=".f-advs">Реклама</button>
           </div>
 
-          <div id="Container" class="works__ex_wrap j-filters">
-            <div class="mix f-sites" data-my-order="1">
-              <img src="https://pp.vk.me/c618620/v618620751/ba88/9r8_F5RgDfA.jpg" alt="">q
+          <div class="works__list_wrap j-filters grid">
+
+            <div class="mix works__item f-sites colp">
+              <div class="works__item_inner">
+                <img src="resources/common/img/work_examples/1.png" alt="" class="works__pic">
+                <div class="works__wrap_i">
+                  <div class="works__inner">
+                    <div class="works__info">
+                      <h4 class="works__title">
+                        <a href="http://vk.com" class="works__link">Tektonica.com</a>
+                      </h4>
+                      <p class="works__desc">стильный сайт для молодежного бренда одежды</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mix f-brands" data-my-order="2">
-              <img src="https://pp.vk.me/c618620/v618620751/ba88/9r8_F5RgDfA.jpg" alt="">
-            </div>
-            <div class="mix f-identity" data-my-order="3">
-              <img src="https://pp.vk.me/c617530/v617530232/de9e/vUycdOoE4nQ.jpg" alt="">
-            </div>
-            <div class="mix f-advs" data-my-order="4">
-              <img src="https://pp.vk.me/c617530/v617530232/de9e/vUycdOoE4nQ.jpg" alt="">
-            </div>
+
+
+
+
+           <!--  <div class="mix works__ex f-sites" data-my-order="1">
+              <img src="resources/common/img/work_examples/1.png" alt="" class="works__ex_preview">
+              <div class="works__ex_inner">
+                <div class="works__ex__wrap">
+                <div class="works__ex__inner">
+                  <div class="works__ex__txt">
+                    <a href="https://vk.com" class="works__ex_title">
+                      Tektonica.com
+                    </a>
+                    <p class="works__ex_desc">стильный сайт для молодежного бренда одежды</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div> -->
+
           </div>
 
         </div>

@@ -28,7 +28,11 @@
 
 		/* works */
 		if(!!$.fn.mixItUp){
-			$('.j-filters').mixItUp();
+			$('.j-filters').mixItUp({
+				layout: {
+					display: 'block'
+				}
+			});
 		}
 
 	});

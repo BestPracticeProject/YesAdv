@@ -585,51 +585,82 @@ button { cursor: pointer; }
   margin: 80px 0 0 0;
 }
 
-.wtypes__list {
-  margin: 0 0 30px 0;
-  text-align: center;
+.works__btn_wrap {
+  margin: 0 0 1em 0;
 }
 
-.wtypes__item {
-  display: inline-block;
+.works__btn {
+  position: relative;
+  padding: 7px;
+  font: .8em 'LatoBold';
+  color: #1b1d20;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dashed transparent;
+  outline: none;
+  -webkit-transition: all  .3s ease;
+  transition: all  .3s ease;
 }
-
-.wtypes__btn {
-  display: block;
-  padding: 6px 8px;
-  font: .83em 'LatoBold';
-  color: #26292e;
-  text-decoration: none;
-}
-  .m-wtypes__btn-active {
-    background: #ecbd00;
+  .works__btn:hover {
+    border-bottom-color: #1b1d20;
+  }
+  .works__btn.active {
+    background-color: #ecbd00;
+  }
+  .works__btn.active:hover {
+    border-bottom-color: transparent;
   }
 
-.works__examples_inner {
-  margin: 0 auto;
+.works__list_wrap .works__item{
+  display: none;
+}
+
+.works__item {
+  position: relative;
+  width: 33%;
+  margin: 0 0 20px 0;
 }
 
 .works__item_inner {
   position: relative;
-  width: 270px;
-  height: 200px;
+  max-width: 270px;
+  max-height: 200px;
   margin: 0 auto 30px;
   padding: 0;
   overflow: hidden;
 }
-
-.works__preview {
+.works__pic {
   width: 100%;
   height: 100%;
 }
 
-.witem-hidden {
-  width: 0;
-  height: 0;
-  visibility: hidden;
-  -webkit-animation: bounceOut .3s;
-  animation: bounceOut .3s;
+.works__wrap_i {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #ecbd00;
 }
+  .works__item_inner:hover .works__wrap {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+.works__item_inner {
+  margin: 0 auto;
+}
+
 
 .witem__wrap {
   position: absolute;
@@ -1018,6 +1049,3 @@ button { cursor: pointer; }
 
 
 
-#Container .mix{
-    display: none;
-}
