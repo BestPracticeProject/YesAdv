@@ -184,6 +184,12 @@ body {
   font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+html,
+body,
+.wrapper {
+    height: 100%;
+}
+
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
@@ -1057,15 +1063,15 @@ button { cursor: pointer; }
  * FOLIO PAGE
  *------------------------------------------------------------------------------*/
 .folio_div_back_link {
-max-width: 1140px;
-position: fixed;
-top: 60px;
-left: 0;
-right: 0;
-margin: 0 auto;
+    max-width: 1140px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
-  .folio_back_link {
+.folio_back_link {
     display: block;
     width: 70px;
     height: 70px;
@@ -1077,159 +1083,150 @@ margin: 0 auto;
     color: #000;
     line-height: 70px;
     text-align: center;
-  }
+}
 
 .folio__wrap {
 max-width: 900px;
 margin: 0 auto;
 }
 
-  .folio_hgroup {
+.folio_hgroup {
     margin-top: 160px;
     padding: 0 5px;
-  }
+}
 
-    .folio_main_head {
-      margin: 0;
-      text-transform: uppercase;
-      font: 1.3em/1.5em 'BloknotCBold';
+.folio_main_head {
+    margin: 0;
+    text-transform: uppercase;
+    font: 1.3em/1.5em 'BloknotCBold';
 
-    }
+}
 
-    .folio_description {
-      margin: 0;
-      margin-bottom: 20px;
-      font: .875em/1.5em 'BloknotC';
-    }
+.folio_description {
+    margin: 0;
+    margin-bottom: 20px;
+    font: .875em/1.5em 'BloknotC';
+}
 
-  .folio_img {
+.folio_img {
     margin-top: 10px;
-  }
+}
 
-  .folio_like_project_text {
+.folio_like_project_text {
     font: 1.2em 'BloknotC';
     text-align: center;
-  }
+}
 
-  .folio_like_project_text_bold {
+.folio_like_project_text_bold {
     font: 1.2em 'BloknotCBold';
-  }
+}
 
-  .folio_like_project_text_link {
+.folio_like_project_text_link {
     text-decoration: underline;
     color: #000;
-  }
+}
 
-  .folio_change_img_group_left {
+.folio_change_img_group_left {
     display: block;
     float: left;
     font: 1.125em 'BloknotCBold';
     color: #000;
     line-height: 50px;
-  }
-  
-    .folio_change_img_group_left:before {
-      content: " ";
-      display: block;
-      float: left;
-      width: 50px;
-      height: 50px; 
-      background-color: #ecbd00;
-      background-image: url('../img/folio/arrow_l.png');
-      background-repeat: no-repeat;
-      background-position: center center;
-      margin-right: 16px;
-    }
-  
-  .folio_change_img_group_right{
+}
+
+.folio_change_img_group_left:before {
+    content: " ";
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: #ecbd00;
+    background-image: url('../img/folio/arrow_l.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 16px;
+}
+
+.folio_change_img_group_right{
     display: block;
     float: right;
     font: 1.125em 'BloknotCBold';
     background-repeat: no-repeat;
     color: #000;
     line-height: 50px;
-  }
+}
 
-    .folio_change_img_group_right:after {
-      content: " ";
-      display: block;
-      float: right;
-      width: 50px;
-      height: 50px;
-      background-color: #ecbd00;
-      background-image: url('../img/folio/arrow_r.png');
-      background-repeat: no-repeat;
-      background-position: center center;
-      margin-left: 16px;
-    }
+.folio_change_img_group_right:after {
+    content: " ";
+    display: block;
+    float: right;
+    width: 50px;
+    height: 50px;
+    background-color: #ecbd00;
+    background-image: url('../img/folio/arrow_r.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 16px;
+}
 
 
 /*-----------------------------------------------------------------------------
  *404 PAGE
  *------------------------------------------------------------------------------*/
 
-  .wrap_error {
+.wrap_error-page {
     background-color: #ecbd00;
-    position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-  }
+    height: 100%;
+}
 
-    .error_table {
-        display:table;
-        width: 100%;
-        height: 100%;
-    }
+.m-error-page__table {
+    display:table;
+    width: 100%;
+    height: 100%;
+}
 
-      .content_error {
-        display: table-cell;
-        vertical-align: middle;
-      }
+.error-page__content {
+    display: table-cell;
+    vertical-align: middle;
+}
 
-        .error_message {
-          margin: 0 auto;
-          max-width: 720px;
-        }
+.error-page__content_message {
+    margin: 0 auto;
+    max-width: 720px;
+}
 
-          .text_error{
-             font: 28px 'LatoRegular';
-             color: #26292e;
-          }
+.error-page__content_message_text{
+    font: 28px 'LatoRegular';
+    color: #26292e;
+}
 
-           .error_text_link {
-             font: 28px 'LatoSemibold';
-             color: #26292e;
-           }
+.error-page__content_message_text_link {
+    font: 28px 'LatoSemibold';
+    color: #26292e;
+}
 
-        .text_error_404{
-          margin: ;0 auto;
-          font: 404px/464px 'LatoBold';
-          color: #26292e;
-          text-align: center;
-        }
+.error-page__content_message_text_error404{
+    margin: ;0 auto;
+    font: 404px/464px 'LatoBold';
+    color: #26292e;
+    text-align: center;
+}
 
-    .footer_error {
-      position: relative;
-      bottom: 60px;
-      background: #26292e;
-      height: 60px;
-      border-top: 3px solid #2f3238;
+.error-page__footer {
+    position: relative;
+    bottom: 60px;
+    background: #26292e;
+    height: 60px;
+    border-top: 3px solid #2f3238;
+}
 
-    }
-        
-        .footer_text {
-          font: 12px/60px 'MyriadProRegular';
-          text-align: center;
-          color: #fff;
-          text-transform: uppercase;
-        }
+.error-page__footer {
+    font: 12px/57px 'MyriadProRegular';
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
 
-          .footer_text_yellow {
-            color: #ecbd00;
-            }
-
-/*-----------------------------------------------------------------------------
- *END 404 PAGE
- *------------------------------------------------------------------------------*/
+.error-page__footer_text_yellow {
+    color: #ecbd00;
+}
