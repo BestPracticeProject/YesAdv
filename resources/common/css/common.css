@@ -496,7 +496,7 @@ button { cursor: pointer; }
   padding: 0 10px;
 }
 
-.header_inner{
+.header__inner{
   position: relative;
 }
 
@@ -507,65 +507,61 @@ button { cursor: pointer; }
 /*-----------------------------------------------------------------------------
  * NAV
  *------------------------------------------------------------------------------*/
-.nav_inner {
+.nav__inner {
   position: relative;
   float: right;
 }
 
- .nav_btn {
-  background: transparent;
-  border: 1px solid #fefefe;
+.nav__btn {
   padding: 15px 16px;
-  color: #fefefe;
+  background: transparent;
   font: 1em 'BloknotCBold';
+  color: #fefefe;
   text-transform: uppercase;
+  border: 1px solid #fefefe;
   outline: none;
- }
+}
+  .nav-active .nav__btn {
+    border-color: #ecbd00;
+  }
 
- .nav_list {
-  float: right;
+.nav__list {
   display: none;
   position: absolute;
   top: 100%;
   right: 0;
-  background: #26282b;
   padding: 15px 0 0 0;
- }
-
-  .nav_link {
-    color: #fefefe;
-    text-decoration: none;
-    font: 1em 'BloknotCBold';
-    text-transform: uppercase;
+  background: #26282b;
+}
+  .nav-active .nav__list {
     display: block;
-    padding: 6px 16px;
- }
+  }
 
- .nav-active .nav_btn {
-  border-color: #ecbd00;
- }
-
- .nav-active .nav_list {
+.nav__link {
   display: block;
- }
-
-  .nav_item-active .nav_link {
+  padding: 6px 16px;
+  font: 1em 'BloknotCBold';
+  color: #fefefe;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+  .nav_item-active .nav__link {
     background: #ecbd00;
     color: #1b1d20;
   }
 
 @media screen and (min-width: 720px) {
-  .nav_btn {
+  .nav__btn {
     display: none;
   }
 
-  .nav_list {
+  .nav__list {
     display: block;
     position: relative;
     background: transparent;
   }
 
-  .nav_item {
+  .nav__item {
     display: inline-block;
   }
 }
