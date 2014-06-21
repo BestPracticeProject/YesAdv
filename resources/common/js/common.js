@@ -28,31 +28,9 @@
         }
 
 		/* works */
-		$worksCategories.on('click', '.j-cat_btn', function(){
-			var that = $(this);
-			if(!that.hasClass('m-wtypes__btn-active')){
-				var category = that.attr("href"),
-					$listWorks = $worksExample.find('.j-work'),
-					amountOfWorks = $listWorks.length,
-					$reserv = $works.find('.j-works_reserv');
-
-					$.each($listWorks, function(index, val) {
-						var work = $(this);
-
-						if(work.data('cat') != category){
-							var i = work.addClass('witem-hidden').detach();
-							i.appendTo($reserv);
-						} else {
-							work.removeClass('witem-hidden');
-						}
-					});
-
-
-
-			};
-			return false;
-		});
-
+		if(!!$.fn.mixItUp){
+			$('.j-filters').mixItUp();
+		}
 
 	});
 
