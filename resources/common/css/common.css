@@ -1062,7 +1062,7 @@ button { cursor: pointer; }
 /*-----------------------------------------------------------------------------
  * FOLIO PAGE
  *------------------------------------------------------------------------------*/
-.folio_div_back_link {
+.i-folio__div_back_link {
     max-width: 1140px;
     position: fixed;
     top: 60px;
@@ -1197,7 +1197,7 @@ margin: 0 auto;
  *404 PAGE
  *------------------------------------------------------------------------------*/
 
-.m-error-page__table {
+.error-page {
     display:table;
     width: 100%;
     height: 100%;
@@ -1209,22 +1209,19 @@ margin: 0 auto;
     vertical-align: middle;
 }
 
-.error-page__content_message {
+.error-page__txt{
+    font: 28px 'LatoRegular';
+    color: #26292e;
     margin: 0 auto;
     max-width: 720px;
 }
 
-.error-page__content_message_text{
-    font: 28px 'LatoRegular';
-    color: #26292e;
-}
-
-.error-page__content_message_text_link {
+.error-page__link_to_index_page {
     font: 28px 'LatoSemibold';
     color: #26292e;
 }
 
-.error-page__content_message_text_error404{
+.error-page__title{
     margin: ;0 auto;
     font: 404px/464px 'LatoBold';
     color: #26292e;
