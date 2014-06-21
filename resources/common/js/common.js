@@ -21,10 +21,11 @@
 		});
 
 		/* slider */
-
-		$('.bxslider').bxSlider({
-			pager: false
-		});
+        if (!!$.fn.bxSlider){
+            $('.bxslider').bxSlider({
+                pager: false
+            });
+        }
 
 		/* works */
 		if(!!$.fn.mixItUp){
