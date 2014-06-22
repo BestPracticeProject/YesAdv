@@ -2,91 +2,91 @@
 
 /* Fonts */
 @font-face {
-    font-family: 'BloknotCRegular';
-    src: url('../fonts/BloknotC/.eot');
-    src: url('../fonts/BloknotC/.eot') format('embedded-opentype'),
-         url('../fonts/BloknotC/.woff') format('woff'),
-         url('../fonts/BloknotC/.ttf') format('truetype'),
-         url('../fonts/BloknotC/.svg#BloknotCRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'BloknotCRegular';
+  src: url('../fonts/BloknotC/.eot');
+  src: url('../fonts/BloknotC/.eot') format('embedded-opentype'),
+       url('../fonts/BloknotC/.woff') format('woff'),
+       url('../fonts/BloknotC/.ttf') format('truetype'),
+       url('../fonts/BloknotC/.svg#BloknotCRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'BloknotCBold';
-    src: url('../fonts/BloknotC-Bold/fontsbloknotc-bold.eot');
-    src: url('../fonts/BloknotC-Bold/bloknotc-bold.eot') format('embedded-opentype'),
-         url('../fonts/BloknotC-Bold/bloknotc-bold.woff') format('woff'),
-         url('../fonts/BloknotC-Bold/bloknotc-bold.ttf') format('truetype'),
-         url('../fonts/BloknotC-Bold/bloknotc-bold.svg#BloknotCBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'BloknotCBold';
+  src: url('../fonts/BloknotC-Bold/fontsbloknotc-bold.eot');
+  src: url('../fonts/BloknotC-Bold/bloknotc-bold.eot') format('embedded-opentype'),
+       url('../fonts/BloknotC-Bold/bloknotc-bold.woff') format('woff'),
+       url('../fonts/BloknotC-Bold/bloknotc-bold.ttf') format('truetype'),
+       url('../fonts/BloknotC-Bold/bloknotc-bold.svg#BloknotCBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'LatoThin';
-    src: url('../fonts/Lato-Thin/lato-thin.eot');
-    src: url('../fonts/Lato-Thin/lato-thin.eot') format('embedded-opentype'),
-         url('../fonts/Lato-Thin/lato-thin.woff') format('woff'),
-         url('../fonts/Lato-Thin/lato-thin.ttf') format('truetype'),
-         url('../fonts/Lato-Thin/lato-thin.svg#LatoThin') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'LatoThin';
+  src: url('../fonts/Lato-Thin/lato-thin.eot');
+  src: url('../fonts/Lato-Thin/lato-thin.eot') format('embedded-opentype'),
+       url('../fonts/Lato-Thin/lato-thin.woff') format('woff'),
+       url('../fonts/Lato-Thin/lato-thin.ttf') format('truetype'),
+       url('../fonts/Lato-Thin/lato-thin.svg#LatoThin') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'LatoRegular';
-    src: url('../fonts/Lato-Regular/lato-regular.eot');
-    src: url('../fonts/Lato-Regular/lato-regular.eot') format('embedded-opentype'),
-         url('../fonts/Lato-Regular/lato-regular.woff') format('woff'),
-         url('../fonts/Lato-Regular/lato-regular.ttf') format('truetype'),
-         url('../fonts/Lato-Regular/lato-regular.svg#LatoRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'LatoRegular';
+  src: url('../fonts/Lato-Regular/lato-regular.eot');
+  src: url('../fonts/Lato-Regular/lato-regular.eot') format('embedded-opentype'),
+       url('../fonts/Lato-Regular/lato-regular.woff') format('woff'),
+       url('../fonts/Lato-Regular/lato-regular.ttf') format('truetype'),
+       url('../fonts/Lato-Regular/lato-regular.svg#LatoRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'LatoBold';
-    src: url('../fonts/Lato-Bold/lato-bold.eot');
-    src: url('../fonts/Lato-Bold/lato-bold.eot') format('embedded-opentype'),
-         url('../fonts/Lato-Bold/lato-bold.woff') format('woff'),
-         url('../fonts/Lato-Bold/lato-bold.ttf') format('truetype'),
-         url('../fonts/Lato-Bold/lato-bold.svg#LatoBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'LatoBold';
+  src: url('../fonts/Lato-Bold/lato-bold.eot');
+  src: url('../fonts/Lato-Bold/lato-bold.eot') format('embedded-opentype'),
+       url('../fonts/Lato-Bold/lato-bold.woff') format('woff'),
+       url('../fonts/Lato-Bold/lato-bold.ttf') format('truetype'),
+       url('../fonts/Lato-Bold/lato-bold.svg#LatoBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'LatoBlack';
-    src: url('../fonts/Lato-Black/lato-black.eot');
-    src: url('../fonts/Lato-Black/lato-black.eot') format('embedded-opentype'),
-         url('../fonts/Lato-Black/lato-black.woff') format('woff'),
-         url('../fonts/Lato-Black/lato-black.ttf') format('truetype'),
-         url('../fonts/Lato-Black/lato-black.svg#LatoBlack') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'LatoBlack';
+  src: url('../fonts/Lato-Black/lato-black.eot');
+  src: url('../fonts/Lato-Black/lato-black.eot') format('embedded-opentype'),
+       url('../fonts/Lato-Black/lato-black.woff') format('woff'),
+       url('../fonts/Lato-Black/lato-black.ttf') format('truetype'),
+       url('../fonts/Lato-Black/lato-black.svg#LatoBlack') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'LatoHeavy';
-    src: url('../fonts/Lato-Heavy/lato-heavy.eot');
-    src: url('../fonts/Lato-Heavy/lato-heavy.eot') format('embedded-opentype'),
-         url('../fonts/Lato-Heavy/lato-heavy.woff') format('woff'),
-         url('../fonts/Lato-Heavy/lato-heavy.ttf') format('truetype'),
-         url('../fonts/Lato-Heavy/lato-heavy.svg#LatoHeavy') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'LatoSemibold';
+  src: url('../fonts/Lato-Semibold/lato-semibold.eot');
+  src: url('../fonts/Lato-Semibold/lato-semibold.eot') format('embedded-opentype'),
+      url('../fonts/Lato-Semibold/lato-semibold.woff') format('woff'),
+      url('../fonts/Lato-Semibold/lato-semibold.ttf') format('truetype'),
+      url('../fonts/Lato-Semibold/lato-semibold.svg#LatoSemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'LatoSemibold';
-    src: url('../fonts/Lato-Semibold/lato-semibold.eot');
-    src: url('../fonts/Lato-Semibold/lato-semibold.eot') format('embedded-opentype'),
-        url('../fonts/Lato-Semibold/lato-semibold.woff') format('woff'),
-        url('../fonts/Lato-Semibold/lato-semibold.ttf') format('truetype'),
-        url('../fonts/Lato-Semibold/lato-semibold.svg#LatoSemibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'LatoHeavy';
+  src: url('../fonts/Lato-Heavy/lato-heavy.eot');
+  src: url('../fonts/Lato-Heavy/lato-heavy.eot') format('embedded-opentype'),
+       url('../fonts/Lato-Heavy/lato-heavy.woff') format('woff'),
+       url('../fonts/Lato-Heavy/lato-heavy.ttf') format('truetype'),
+       url('../fonts/Lato-Heavy/lato-heavy.svg#LatoHeavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*-----------------------------------------------------------------------------
@@ -345,7 +345,6 @@ input[type="radio"] {
 /*-----------------------------------------------------------------------------
  * 3. HELPER CLASSES
  *------------------------------------------------------------------------------*/
-
 /* .cf (clearfix) - clear floats */
 .cf:before,
 .cf:after {
@@ -403,9 +402,6 @@ button { cursor: pointer; }
   border: none;
 }
 
-/*-----------------------------------------------------------------------------
- * SECTION
- *------------------------------------------------------------------------------*/
 .section {
   font-size: 18px;
   overflow: hidden;
@@ -659,8 +655,7 @@ button { cursor: pointer; }
   margin: 10px 0 0 0;
 }
 
-
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 980px) {
   .slide__btn_wrap {
     text-align: left;
   }
@@ -673,11 +668,7 @@ button { cursor: pointer; }
   .m-slide__col-second {
     margin: 40px 0 0 0;
   }
-
-
 }
-
-
 
 /* Works */
 .works__wrap {
@@ -728,6 +719,7 @@ button { cursor: pointer; }
   padding: 0;
   overflow: hidden;
 }
+
 .works__pic {
   width: 100%;
   height: 100%;
