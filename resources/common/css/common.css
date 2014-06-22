@@ -566,6 +566,25 @@ button { cursor: pointer; }
   }
 }
 
+/* slider */
+.bx-controls {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background: #2f3238;
+  bottom: 0;
+}
+
+.slider__link_to_next_section {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: #ecbd00 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjUwN0Y2QUVGOUE1MTFFM0EzMzFFNzg1M0I5MjBEMUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjUwN0Y2QUZGOUE1MTFFM0EzMzFFNzg1M0I5MjBEMUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGNTA3RjZBQ0Y5QTUxMUUzQTMzMUU3ODUzQjkyMEQxQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGNTA3RjZBREY5QTUxMUUzQTMzMUU3ODUzQjkyMEQxQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmFRnN8AAAB7SURBVHjafNJRCsAgCAZgJ56pp2B0pp2jM/Uydqo9TJmNFr8JBYqfRLWllEhD6I2b1vH1iSfNC2WBf32WVF3ZCy3AHfW+yroduk4vZG+QBbrMsE8vAUZoN8PDpSAMkSU8HAlhiGaIMEQ0XcKMmw/e0RNJ8GYdh5/iEWAARwAoZ8E2MgcAAAAASUVORK5CYII=) center no-repeat;
+  z-index: 9;
+}
+
 /* slide */
 .slide {
   position: relative;
@@ -588,6 +607,7 @@ button { cursor: pointer; }
 .slide_txt {
   font-size: 3em;
   color: #fff;
+  text-align: center;
 }
 
 .slide__txt_extra {
@@ -605,13 +625,17 @@ button { cursor: pointer; }
     background: #ffc902;
   }
 
+.slide__btn_wrap {
+  text-align: center;
+}
+
 .slide__btn {
   margin: 45px 0 0 0;
 }
 
 .m-slide__col-second {
   max-width: 220px;
-  margin: 40px 0 0 0;
+  margin: 40px auto 0 auto;
   font: .88em 'BloknotCBold';
   color: #fff;
 }
@@ -637,9 +661,19 @@ button { cursor: pointer; }
 
 
 @media screen and (min-width: 680px) {
+  .slide__btn_wrap {
+    text-align: left;
+  }
+
   .slide_txt {
     font-size: 4em;
+    text-align: left;
   }
+
+  .m-slide__col-second {
+    margin: 40px 0 0 0;
+  }
+
 
 }
 
