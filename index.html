@@ -39,32 +39,26 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="resources/common/css/common.css" />
   <link href="resources/slider/jquery.bxslider.css" rel="stylesheet" />
-  <!-- Application-specific meta tags -->
-  <!-- Open Graph protocol -->
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="" />
-  <meta property="og:description" content="" />
-  <meta property="og:image" content="" />
 </head>
-<body>
+<body id="top">
   <div class="wrapper j-wrapper">
 
-    <div class="section section-header">
+    <div class="section m-section-header">
       <div class="section__inner">
         <header class="header">
-          <div class="header_inner">
+          <div class="header__inner">
             <img class="logo" src="resources/common/img/logo.png" />
 
             <nav class="nav cf j-nav">
-              <div class="nav_inner">
-                <button class="nav_btn j-nav_btn">меню</button>
+              <div class="nav__inner">
+                <button class="nav__btn j-nav_btn">меню</button>
 
-                <ul class="nav_list j-nav_list">
-                  <li class="nav_item-active nav_item"><a href="" class="nav_link">yes!</a></li>
-                  <li class="nav_item"><a href="" class="nav_link">портфолио</a></li>
-                  <li class="nav_item"><a href="" class="nav_link">сервис</a></li>
-                  <li class="nav_item"><a href="" class="nav_link">о нас</a></li>
-                  <li class="nav_item"><a href="" class="nav_link">контакты</a></li>
+                <ul class="nav__list j-nav_list">
+                  <li class="nav_item-active nav__item"><a href="#top" class="nav__link">yes!</a></li>
+                  <li class="nav__item"><a href="#works" class="nav__link">портфолио</a></li>
+                  <li class="nav__item"><a href="#service" class="nav__link">сервис</a></li>
+                  <li class="nav__item"><a href="#aboutUs" class="nav__link">о нас</a></li>
+                  <li class="nav__item"><a href="#contacts" class="nav__link">контакты</a></li>
                 </ul>
               </div>
             </nav>
@@ -73,9 +67,38 @@
       </div>
 
       <div class="bx-slider">
-        <ul class="bxslider">
+        <a href="#works" class="slider__link_to_next_section"></a>
+        <ul class="j-bxslider">
           <li>
-            <div class="slider_wrap">
+            <img src="resources/common/img/header/header_slider_1.png" alt="" class="slide_img">
+            <div class="slide m-slide-visualizer">
+              <div class="slide__content grid">
+                <div class="slide_col col">
+                  <p class="slide_txt">
+                    <span class="slide__txt_extra">Интеллигентное</span><br />
+                    <span class="slide__txt_extra">Агентство</span><br>
+                    без вредных <br />
+                    привычек,<br />
+                    ищет клиента<br />
+                    для <span class="slide__txt_extra">серьёзных</span><br />
+                    <span class="slide__txt_extra">отношений</span>
+                  </p>
+                  <div class="slide__btn_wrap">
+                    <a href="" class="btn slide__btn">Заполнить бриф онлайн</a>
+                  </div>
+                </div>
+
+                <div class="slide__col col m-slide__col-second">
+                  <p class="slide__project">новый проект:</p>
+                  <h5 class="slide__project__name">VISUALIZERS</h5>
+                  <h7 class="slide__project__desc">фирменный стиль <br>для рекламного агентства полного цикла</h7>
+                  <div>
+                    <a href="folio.html" class="btn slide__project__link">посмотреть</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="slider_wrap">
               <div class="h_slide">
                 <div class="h_slide__right">
                   <p class="h_slide__txt">
@@ -91,7 +114,7 @@
                 </div>
                 <div class="h_slide_left"></div>
               </div>
-            </div>
+            </div> -->
 
           </li>
           <li><img src="resources/common/img/header/header_slider_1.png" alt=""></li>
@@ -99,143 +122,64 @@
       </div>
     </div>
 
-   <!--  <div class="section m-section-works works">
+    <div class="section m-section-works works" id="works">
       <div class="section__inner">
         <h3 class="section__title">Наши работы</h3>
         <p class="section__desc">Наша гордость, собрали, разложили, хвастаемся.</p>
         <div class="works__wrap cf">
 
-          <div class="works__types wtypes">
-            <ul class="wtypes__list">
-              <li class="wtypes__item"><a href="all" class="wtypes__btn m-wtypes__btn-active">Все</a></li>
-              <li class="wtypes__item"><a href="sites" class="wtypes__btn">Сайты</a></li>
-              <li class="wtypes__item"><a href="branding" class="wtypes__btn">Брендинг</a></li>
-              <li class="wtypes__item"><a href="identity" class="wtypes__btn">Айдентика</a></li>
-              <li class="wtypes__item"><a href="adv" class="wtypes__btn">Реклама</a></li>
-            </ul>
+          <div class="works__btn_wrap">
+            <button class="filter works__btn" data-filter="all">Все</button>
+            <button class="filter works__btn" data-filter=".f-sites">Сайты</button>
+            <button class="filter works__btn" data-filter=".f-brands">Брандинг</button>
+            <button class="filter works__btn" data-filter=".f-identity">Айдентика</button>
+            <button class="filter works__btn" data-filter=".f-advs">Реклама</button>
           </div>
 
-          <div class="works__examples">
-            <div class="works__examples_inner grid">
-              <div class="works__item witem colp">
-                <div class="works__item_inner">
-                  <img src="resources/common/img/work_examples/1.png" alt="" class="works__preview">
-                  <div class="witem__wrap">
-                    <div class="witem__inner">
-                      <div class="witem__info">
-                        <h4 class="witem__title">
-                          <a href="https://vk.com/" class="witem__title_link" target="_blank">Tektonica.com</a>
-                        </h4>
-                        <p class="witem__txt">стильный сайт для молодежного бренда одежды</p>
-                      </div>
+          <div class="works__list_wrap j-filters grid">
+
+            <div class="mix works__item f-sites colp">
+              <div class="works__item_inner">
+                <img src="resources/common/img/work_examples/1.png" alt="" class="works__pic">
+                <div class="works__wrap_i">
+                  <div class="works__inner">
+                    <div class="works__info">
+                      <h4 class="works__title">
+                        <a href="http://vk.com" class="works__link">Tektonica.com</a>
+                      </h4>
+                      <p class="works__desc">стильный сайт для молодежного бренда одежды</p>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="works__item witem colp">
-                <div class="works__item_inner">
-                  <img src="resources/common/img/work_examples/1.png" alt="" class="works__preview">
-                  <div class="witem__wrap">
-                    <div class="witem__inner">
-                      <div class="witem__info">
-                        <h4 class="witem__title">
-                          <a href="https://vk.com/" class="witem__title_link" target="_blank">Tektonica.com</a>
-                        </h4>
-                        <p class="witem__txt">стильный сайт для молодежного бренда одежды</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="works__item witem colp">
-                <div class="works__item_inner">
-                  <img src="resources/common/img/work_examples/1.png" alt="" class="works__preview">
-                  <div class="witem__wrap">
-                    <div class="witem__inner">
-                      <div class="witem__info">
-                        <h4 class="witem__title">
-                          <a href="https://vk.com/" class="witem__title_link" target="_blank">Tektonica.com</a>
-                        </h4>
-                        <p class="witem__txt">стильный сайт для молодежного бренда одежды</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="works__item witem colp">
-                <div class="works__item_inner">
-                  <img src="resources/common/img/work_examples/1.png" alt="" class="works__preview">
-                  <div class="witem__wrap">
-                    <div class="witem__inner">
-                      <div class="witem__info">
-                        <h4 class="witem__title">
-                          <a href="https://vk.com/" class="witem__title_link" target="_blank">Tektonica.com</a>
-                        </h4>
-                        <p class="witem__txt">стильный сайт для молодежного бренда одежды</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="works__item witem colp">
-                <div class="works__item_inner">
-                  <img src="resources/common/img/work_examples/1.png" alt="" class="works__preview">
-                  <div class="witem__wrap">
-                    <div class="witem__inner">
-                      <div class="witem__info">
-                        <h4 class="witem__title">
-                          <a href="https://vk.com/" class="witem__title_link" target="_blank">Tektonica.com</a>
-                        </h4>
-                        <p class="witem__txt">стильный сайт для молодежного бренда одежды</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="works__item witem colp">
-                <div class="works__item_inner">
-                  <img src="resources/common/img/work_examples/1.png" alt="" class="works__preview">
-                  <div class="witem__wrap">
-                    <div class="witem__inner">
-                      <div class="witem__info">
-                        <h4 class="witem__title">
-                          <a href="https://vk.com/" class="witem__title_link" target="_blank">Tektonica.com</a>
-                        </h4>
-                        <p class="witem__txt">стильный сайт для молодежного бренда одежды</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="works__item witem colp">
-                <div class="works__item_inner">
-                  <img src="resources/common/img/work_examples/1.png" alt="" class="works__preview">
-                  <div class="witem__wrap">
-                    <div class="witem__inner">
-                      <div class="witem__info">
-                        <h4 class="witem__title">
-                          <a href="https://vk.com/" class="witem__title_link" target="_blank">Tektonica.com</a>
-                        </h4>
-                        <p class="witem__txt">стильный сайт для молодежного бренда одежды</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
             </div>
+
+
+
+
+           <!--  <div class="mix works__ex f-sites" data-my-order="1">
+              <img src="resources/common/img/work_examples/1.png" alt="" class="works__ex_preview">
+              <div class="works__ex_inner">
+                <div class="works__ex__wrap">
+                <div class="works__ex__inner">
+                  <div class="works__ex__txt">
+                    <a href="https://vk.com" class="works__ex_title">
+                      Tektonica.com
+                    </a>
+                    <p class="works__ex_desc">стильный сайт для молодежного бренда одежды</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div> -->
+
           </div>
+
         </div>
       </div>
-    </div> -->
+    </div>
 
-    <section class="section w-section-yellow m-section-wdo wdo">
+    <section class="section w-section-yellow m-section-wdo wdo" id="service">
       <div class="section__inner">
         <h3 class="section__title">Что мы делаем и как?</h3>
         <p class="section__desc">Со страстью изучаем все, что делаем. Помогаем нашим клиентам.</p>
@@ -278,7 +222,7 @@
       </div>
     </section>
 
-    <section class="section m-section-process process_preview">
+    <section class="section m-section-process process_preview" id="aboutUs">
       <div class="section__inner">
         <div class="process__preview"></div>
         <div class="process__view grid">
@@ -305,7 +249,7 @@
       <a href="https://vk.com" class="fill_brief__link btn" target="_blank">Заполнить бриф онлайн</a>
     </div>
 
-    <section class="section m-section-contacts contacts_preview">
+    <section class="section m-section-contacts contacts_preview" id="contacts">
       <div class="section__inner">
         <h3 class="section__title">Контакты</h3>
         <p class="section__desc">Думаете мы можем помочь? Мы хотим, ждем ваших сообщений.</p>
@@ -369,7 +313,7 @@
       </div>
     </section>
 
-    <section class="section m-section-copyrights copyrights">
+    <footer class="section m-section-copyrights copyrights ">
       <div class="section__inner">
         <p class="copyrights__txt">
           &#169;&nbsp;YES!
@@ -378,12 +322,13 @@
           </span>
         </p>
       </div>
-    </section>
+    </footer>
 
   </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>window.jQuery || document.write("<script src='resources/common/js/libs/jquery-1.11.1.min.js'>\x3C/script>")</script>
 <script src="resources/slider/jquery.bxslider.min.js"></script>
+<script src="resources/common/js/plugin.js"></script>
 <script src="resources/common/js/common.js"></script>
 </body>
 </html>

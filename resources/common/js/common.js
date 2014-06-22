@@ -1,17 +1,14 @@
 ;(function($){
 	'use strict';
 
-	/* trigger when page is ready */
 	$(function(){
 		var $wrapper = $(document).find('.j-wrapper'),
 				$nav = $wrapper.find('.j-nav'),
 				$navBtn = $nav.find('.j-nav_btn'),
 				$navList = $nav.find('.j-nav_list');
 
-		/* MENU */
+		/* menu */
 		$navBtn.on('click', function(){
-			var that = $(this);
-
 			if($nav.hasClass('nav-active')){
 				$nav.removeClass('nav-active');
 			} else {
@@ -19,22 +16,28 @@
 			}
 		});
 
+		/* smooth scrolling */
+		$('a[href^="#"]').on('click', function(){
+			var target = $(this).attr('href');
+			$('html, body').animate({scrollTop: $(target).offset().top}, 300);
+			return false;
+		});
 
 		/* slider */
-  	$('.bxslider').bxSlider({
-  		pager: false
-  	});
+		if (!!$.fn.bxSlider){
+			$('.j-bxslider').bxSlider({
+				pager: false
+			});
+		}
 
+		/* works */
+		if(!!$.fn.mixItUp){
+			$('.j-filters').mixItUp({
+				layout: {
+					display: 'block'
+				}
+			});
+		}
 	});
-
-	/* optional triggers
-	$(window).load(function() {
-
-	});
-
-	$(window).resize(function() {
-
-	});
-	*/
 }(window.jQuery));
 
