@@ -1,7 +1,30 @@
 ;(function($){
 	'use strict';
 
+	$.fn.extend({
+		setEqualHeight: function(){
+			var maxHeight = 0,
+				$elem = this;
+
+			$elem.each(function(){
+				if ( $(this).height() > maxHeight ) {
+					maxHeight = $(this).outerHeight();
+				}
+			})
+
+			$elem.height(maxHeight);
+
+			return this;
+		}
+	});
+
 	$(function(){
+		var $cols = $('.j-set_height').find('.j-col'),
+			widthW = (window.innerWidth !== undefined) ? window.innerWidth : (document.documentElement || document.body).clientWidth
+		if(widthW > 980){
+			$cols.setEqualHeight();
+		}
+
 		var $wrapper = $(document).find('.j-wrapper'),
 				$nav = $wrapper.find('.j-nav'),
 				$navBtn = $nav.find('.j-nav_btn'),

@@ -629,6 +629,10 @@ button { cursor: pointer; }
   margin: 45px 0 0 0;
 }
 
+.slide__col {
+  position: relative;
+}
+
 .m-slide__col-second {
   max-width: 220px;
   margin: 40px auto 0 auto;
@@ -660,13 +664,25 @@ button { cursor: pointer; }
     text-align: left;
   }
 
+  .m-slide__col-first {
+    width: 55%;
+  }
+
+  .m-slide__col-second {
+    width: 45%;
+    margin: 0;
+    max-width: none;
+  }
+
   .slide_txt {
     font-size: 4em;
     text-align: left;
   }
 
-  .m-slide__col-second {
-    margin: 40px 0 0 0;
+  .m-slide__col_wrap-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
 
