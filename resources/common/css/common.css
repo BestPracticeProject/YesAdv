@@ -691,13 +691,14 @@ button { cursor: pointer; }
     .works__item {
         width: 100%;
     }
-
-    .m-works__item {
-    padding-left: none; !important
-}
 }
 .m-section-works__inner {
 max-width: 1170px;
+}
+
+.works__inner {
+    position: absolute;
+    bottom: 0;
 }
 
 .works__wrap {
@@ -734,6 +735,7 @@ border-bottom-color: transparent;
 
 .works__list_wrap {
   width: inherit;
+  max-width: 890px;
 }
 
 .works__list_wrap .works__item{
@@ -869,6 +871,17 @@ padding-left: 0;
     .works__item {
         padding-left: 0;
     }
+}
+
+.works__info {
+    padding: 24px 18px;
+    font: normal 14px 'LatoRegular';
+}
+
+.works__link {
+    font: normal 24px 'LatoHeavy';
+    color: #000;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 980px){
