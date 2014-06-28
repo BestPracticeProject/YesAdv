@@ -1,47 +1,53 @@
 @charset "UTF-8";
 
 /* Fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Scada:400,700&subset=latin,cyrillic);
+
+
 @font-face {
-  font-family: 'BloknotCRegular';
-  src: url('../fonts/BloknotC/.eot');
-  src: url('../fonts/BloknotC/.eot') format('embedded-opentype'),
-       url('../fonts/BloknotC/.woff') format('woff'),
-       url('../fonts/BloknotC/.ttf') format('truetype'),
-       url('../fonts/BloknotC/.svg#BloknotCRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'FiraSansThin';
+    src: url('../fonts/FiraSans-Thin/firasans-thin.eot');
+    src: url('../fonts/FiraSans-Thin/firasans-thin.eot') format('embedded-opentype'),
+        url('../fonts/FiraSans-Thin/firasans-thin.woff') format('woff'),
+        url('../fonts/FiraSans-Thin/firasans-thin.ttf') format('truetype'),
+        url('../fonts/FiraSans-Thin/firasans-thin.svg#FiraSansThin') format('svg');
 }
 
 @font-face {
-  font-family: 'BloknotCBold';
-  src: url('../fonts/BloknotC-Bold/fontsbloknotc-bold.eot');
-  src: url('../fonts/BloknotC-Bold/bloknotc-bold.eot') format('embedded-opentype'),
-       url('../fonts/BloknotC-Bold/bloknotc-bold.woff') format('woff'),
-       url('../fonts/BloknotC-Bold/bloknotc-bold.svg#BloknotCBold') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'FiraSansRegular';
+    src: url('../fonts/FiraSans-Regular/firasans-regular.eot');
+    src: url('../fonts/FiraSans-Regular/firasans-regular.eot') format('embedded-opentype'),
+        url('../fonts/FiraSans-Regular/firasans-regular.woff') format('woff'),
+        url('../fonts/FiraSans-Regular/firasans-regular.ttf') format('truetype'),
+        url('../fonts/FiraSans-Regular/firasans-regular.svg#FiraSansRegular') format('svg');
 }
 
 @font-face {
-  font-family: 'LatoThin';
-  src: url('../fonts/Lato-Thin/lato-thin.eot');
-  src: url('../fonts/Lato-Thin/lato-thin.eot') format('embedded-opentype'),
-       url('../fonts/Lato-Thin/lato-thin.woff') format('woff'),
-       url('../fonts/Lato-Thin/lato-thin.ttf') format('truetype'),
-       url('../fonts/Lato-Thin/lato-thin.svg#LatoThin') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'FiraSansSemiBold';
+    src: url('../fonts/FiraSans-SemiBold/firasans-semibold.eot');
+    src: url('../fonts/FiraSans-SemiBold/firasans-semibold.eot') format('embedded-opentype'),
+        url('../fonts/FiraSans-SemiBold/firasans-semibold.woff') format('woff'),
+        url('../fonts/FiraSans-SemiBold/firasans-semibold.ttf') format('truetype'),
+        url('../fonts/FiraSans-SemiBold/firasans-semibold.svg#FiraSansSemiBold') format('svg');
 }
 
 @font-face {
-  font-family: 'LatoRegular';
-  src: url('../fonts/Lato-Regular/lato-regular.eot');
-  src: url('../fonts/Lato-Regular/lato-regular.eot') format('embedded-opentype'),
-       url('../fonts/Lato-Regular/lato-regular.woff') format('woff'),
-       url('../fonts/Lato-Regular/lato-regular.ttf') format('truetype'),
-       url('../fonts/Lato-Regular/lato-regular.svg#LatoRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'FiraSansHeavy';
+    src: url('../fonts/FiraSans-Heavy/firasans-heavy.eot');
+    src: url('../fonts/FiraSans-Heavy/firasans-heavy.eot') format('embedded-opentype'),
+        url('../fonts/FiraSans-Heavy/firasans-heavy.woff') format('woff'),
+        url('../fonts/FiraSans-Heavy/firasans-heavy.ttf') format('truetype'),
+        url('../fonts/FiraSans-Heavy/firasans-heavy.svg#FiraSansHeavy') format('svg');
+}
+
+@font-face {
+    font-family: 'FiraSansBold';
+    src: url('../fonts/FiraSans-Bold/firasans-bold.eot');
+    src: url('../fonts/FiraSans-Bold/firasans-bold.eot') format('embedded-opentype'),
+        url('../fonts/FiraSans-Bold/firasans-bold.woff') format('woff'),
+        url('../fonts/FiraSans-Bold/firasans-bold.ttf') format('truetype'),
+        url('../fonts/FiraSans-Bold/firasans-bold.svg#FiraSansBold') format('svg');
 }
 
 @font-face {
@@ -51,39 +57,6 @@
        url('../fonts/Lato-Bold/lato-bold.woff') format('woff'),
        url('../fonts/Lato-Bold/lato-bold.ttf') format('truetype'),
        url('../fonts/Lato-Bold/lato-bold.svg#LatoBold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'LatoBlack';
-  src: url('../fonts/Lato-Black/lato-black.eot');
-  src: url('../fonts/Lato-Black/lato-black.eot') format('embedded-opentype'),
-       url('../fonts/Lato-Black/lato-black.woff') format('woff'),
-       url('../fonts/Lato-Black/lato-black.ttf') format('truetype'),
-       url('../fonts/Lato-Black/lato-black.svg#LatoBlack') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'LatoSemibold';
-  src: url('../fonts/Lato-Semibold/lato-semibold.eot');
-  src: url('../fonts/Lato-Semibold/lato-semibold.eot') format('embedded-opentype'),
-      url('../fonts/Lato-Semibold/lato-semibold.woff') format('woff'),
-      url('../fonts/Lato-Semibold/lato-semibold.ttf') format('truetype'),
-      url('../fonts/Lato-Semibold/lato-semibold.svg#LatoSemibold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'LatoHeavy';
-  src: url('../fonts/Lato-Heavy/lato-heavy.eot');
-  src: url('../fonts/Lato-Heavy/lato-heavy.eot') format('embedded-opentype'),
-       url('../fonts/Lato-Heavy/lato-heavy.woff') format('woff'),
-       url('../fonts/Lato-Heavy/lato-heavy.ttf') format('truetype'),
-       url('../fonts/Lato-Heavy/lato-heavy.svg#LatoHeavy') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -393,7 +366,8 @@ button { cursor: pointer; }
 .btn {
   display: inline-block;
   padding: 15px 32px;
-  font-family: 'BloknotCBold';
+  font-family: 'Scada', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   color: #1b1d20;
@@ -459,14 +433,14 @@ button { cursor: pointer; }
 
 .section__title {
   margin: 0 0 20px 0;
-  font: normal 2.6em/1 'LatoBold';
+  font: normal 2.6em/1 'FiraSansSemiBold';
   text-align: center;
   color: #1b1d20;
 }
 
 .section__desc {
   margin: 0 0 15px 0;
-  font: normal 1.3em/1 'LatoRegular';
+  font: normal 1.3em/1 'FiraSansRegular';
   text-align: center;
   color: #2f3238;
 }
@@ -510,7 +484,7 @@ button { cursor: pointer; }
 .nav__btn {
   padding: 15px 16px;
   background: transparent;
-  font: 1em 'BloknotCBold';
+  font: bold 1em 'Scada', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: #fefefe;
   text-transform: uppercase;
   border: 1px solid #fefefe;
@@ -535,7 +509,7 @@ button { cursor: pointer; }
 .nav__link {
   display: block;
   padding: 6px 16px;
-  font: 1em 'BloknotCBold';
+  font:bold 1em 'Scada', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: #fefefe;
   text-decoration: none;
   text-transform: uppercase;
@@ -596,7 +570,7 @@ button { cursor: pointer; }
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  font-family: 'LatoThin';
+  font-family: 'FiraSansThin';
 }
 
 .slide_txt {
@@ -612,7 +586,7 @@ button { cursor: pointer; }
   .slide__txt_extra:before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     display: block;
     width: 100%;
@@ -635,27 +609,29 @@ button { cursor: pointer; }
 .m-slide__col-second {
   max-width: 220px;
   margin: 40px auto 0 auto;
-  font: .88em 'BloknotCBold';
   color: #fff;
 }
 
 .slide__project {
   text-transform: uppercase;
   color: #ffc902;
+  font: bold .88em 'Scada', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 .slide__project__name {
   margin: 10px 0;
   font-size: 1.16em;
   text-transform: uppercase;
+  font: bold .88em 'Scada', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 .slide__project__desc {
-  font-family: 'LatoRegular';
+  font-family: 'FiraSansRegular';
 }
 
 .slide__project__link {
   margin: 10px 0 0 0;
+font:bold 1em 'Scada', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 @media screen and (min-width: 980px) {
@@ -714,7 +690,7 @@ float: left;
 display: block;
 position: relative;
 padding: 7px;
-font: .8em 'LatoBold';
+font: .8em 'FiraSansSemiBold';
 color: #1b1d20;
 background-color: transparent;
 border: none;
@@ -799,13 +775,6 @@ transition: top .2s ease .2s;
 top: 0;
 }
 
-.witem__title_link {
-font: 1em 'LatoBlack';
-text-transform: uppercase;
-text-decoration: none;
-color: #000;
-}
-
 .witem__inner {
 position: relative;
 width: 100%;
@@ -823,11 +792,15 @@ bottom: 25px;
 animation: bounceInLeft .3s .3s;
 }
 
+/* Не используемые свойства */
+
 .witem__txt {
 margin: 5px 0 0 0;
-font: .78em 'LatoRegular';
+font: .78em 'FiraSansRegular';
 text-transform: lowercase;
 }
+/* END Не используемые свойства */
+
 @media screen and (min-width: 980px) {
 .works__examples_inner {
 width: 870px;
@@ -875,11 +848,11 @@ padding-left: 0;
 
 .works__info {
     padding: 24px 18px;
-    font: normal 14px 'LatoRegular';
+    font: normal 14px 'FiraSansRegular';
 }
 
 .works__link {
-    font: normal 24px 'LatoHeavy';
+    font: normal 24px 'FiraSansHeavy';
     color: #000;
     text-decoration: none;
 }
@@ -913,12 +886,12 @@ padding-left: 0;
 
 .wdo__name {
   margin: 0 0 10px 0;
-  font: normal 1.33em 'LatoHeavy';
+  font: normal 1.33em 'FiraSansHeavy';
   text-transform: uppercase;
 }
 
 .wdo__item {
-  font: 1em 'LatoRegular';
+  font: 1em 'FiraSansRegular';
 }
 
 @media screen and (min-width: 980px) {
@@ -941,7 +914,7 @@ padding-left: 0;
 
 .process__desc {
   margin: 15px 10px 0 10px;
-  font: 1em 'LatoRegular';
+  font: 1em 'FiraSansRegular';
 }
 
 .process__view  {
@@ -966,7 +939,7 @@ padding-left: 0;
 
 /* Fill brief */
 .fill_brief__link {
-  font: 1.33em 'LatoBlack';
+  font: 1.33em 'FiraSansSemiBold';
 }
 
 /* Contacts */
@@ -976,7 +949,7 @@ padding-left: 0;
 
 .cp_info__title {
   margin: 0 0 20px 0;
-  font: 1.33em 'LatoBold';
+  font: 1.33em 'FiraSansSemiBold';
   text-align: center;
   text-transform: uppercase;
   color: #26292e;
@@ -1006,7 +979,7 @@ padding-left: 0;
   padding: 20px;
   background: #ebebeb;
   border: 1px solid #26292e;
-  font: normal .88em 'LatoRegular';
+  font: normal .88em 'FiraSansRegular';
 }
 
 .cp_form__btn {
@@ -1073,7 +1046,7 @@ padding-left: 0;
 
 /* Copyright */
 .copyrights__txt {
-  font: 0.66em 'LatoRegular';
+  font: 0.66em 'FiraSansRegular';
   text-align: center;
   color: #fefefe;
 }
@@ -1211,7 +1184,7 @@ padding-left: 0;
     background: #ecbd00;
     z-index: 15;
     text-decoration: none;
-    font: 2.25em 'BloknotC';
+    font: 2.25em 'Scada', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: #000;
     line-height: 70px;
     text-align: center;
@@ -1229,7 +1202,7 @@ padding-left: 0;
 
 .folio__title {
     margin: 0;
-    font: 1.3em/1.5em 'BloknotCBold';
+    font:bold 1.3em/1.5em 'Scada', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     text-transform: uppercase;
 
 
@@ -1237,7 +1210,7 @@ padding-left: 0;
 
 .folio__description {
     margin: 0 0 20px 0;
-    font: .875em/1.5em 'BloknotC';
+    font: .875em/1.5em 'Scada', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 .folio__img_group_img {
@@ -1249,12 +1222,12 @@ padding-left: 0;
 }
 
 .like_project_txt {
-    font: 1em 'BloknotC';
+    font: 1em 'Scada', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     text-align: center;
 }
 
 .like_project_txt_bold {
-    font: 1em 'BloknotCBold';
+    font: bold 1em 'Scada', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 .folio_like_project_text_link {
@@ -1269,7 +1242,7 @@ padding-left: 0;
 .folio__nav_left {
     display: block;
     float: left;
-    font: 1.125em 'BloknotCBold';
+    font:bold 1.125em 'Scada', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: #000;
     line-height: 50px;
 }
@@ -1287,7 +1260,7 @@ padding-left: 0;
 .folio__nav_right{
     display: block;
     float: right;
-    font: 1.125em 'BloknotCBold';
+    font:bold 1.125em 'Scada', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     background-repeat: no-repeat;
     color: #000;
     line-height: 50px;
@@ -1331,14 +1304,14 @@ padding-left: 0;
 }
 
 .error-page__txt{
-    font: 28px 'LatoRegular';
+    font: 28px 'FiraSansRegular';
     color: #26292e;
     margin: 0 auto;
     max-width: 720px;
 }
 
 .error-page__link_to_index_page {
-    font: 28px 'LatoSemibold';
+    font: 28px 'FiraSansSemiBold';
     color: #26292e;
 }
 
@@ -1353,11 +1326,3 @@ padding-left: 0;
 .m-copyrights__ext_yellow {
     color: #ecbd00;
 }
-
-<<<<<<< HEAD
-=======
-#Container .mix{
-    display: none;
-}
-
->>>>>>> origin/master

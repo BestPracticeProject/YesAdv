@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'FiraSansExtraBold';
+    src: url('firasans-extrabold.eot');
+    src: url('firasans-extrabold.eot') format('embedded-opentype'),
+         url('firasans-extrabold.woff') format('woff'),
+         url('firasans-extrabold.ttf') format('truetype'),
+         url('firasans-extrabold.svg#FiraSansExtraBold') format('svg');
+}

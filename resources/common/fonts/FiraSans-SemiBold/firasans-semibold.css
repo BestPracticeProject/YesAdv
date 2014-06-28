@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'FiraSansSemiBold';
+    src: url('firasans-semibold.eot');
+    src: url('firasans-semibold.eot') format('embedded-opentype'),
+         url('firasans-semibold.woff') format('woff'),
+         url('firasans-semibold.ttf') format('truetype'),
+         url('firasans-semibold.svg#FiraSansSemiBold') format('svg');
+}

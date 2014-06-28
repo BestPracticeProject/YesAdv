@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'FiraSansHeavy';
+    src: url('firasans-heavy.eot');
+    src: url('firasans-heavy.eot') format('embedded-opentype'),
+         url('firasans-heavy.woff') format('woff'),
+         url('firasans-heavy.ttf') format('truetype'),
+         url('firasans-heavy.svg#FiraSansHeavy') format('svg');
+}
