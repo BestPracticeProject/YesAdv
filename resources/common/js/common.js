@@ -18,9 +18,18 @@
 		}
 	});
 
+
+
+	var $cols = $('.j-set_height').find('.j-col');
+
+	function getWindowWidth(){
+		return (window.innerWidth !== undefined) ? window.innerWidth : (document.documentElement || document.body).clientWidth;
+	}
+
+
 	$(function(){
-		var $cols = $('.j-set_height').find('.j-col'),
-			widthW = (window.innerWidth !== undefined) ? window.innerWidth : (document.documentElement || document.body).clientWidth
+		var widthW = getWindowWidth();
+
 		if(widthW > 980){
 			$cols.setEqualHeight();
 		}
@@ -61,6 +70,17 @@
 				}
 			});
 		}
+	});
+
+	$(window).resize(function() {
+		var widthW = getWindowWidth();
+
+		if (widthW >= 980) {
+			$cols.setEqualHeight()
+		} else {
+			$cols.height('auto');
+		}
+
 	});
 }(window.jQuery));
 
